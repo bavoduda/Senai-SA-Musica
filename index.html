@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Music Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    *{
+        align-content: center;
+    }
+
+    html{
+      height: 100vh;
+    }
+
+    body{
+      color: #fff;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(35, 34, 43, 0.7), rgba(31, 14, 116, 0.7), rgba(21, 0, 128, 0.8) 100%);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      height: auto;
+    }
+    .wrapper{
+      margin: 0 auto;
+        width: 85vw;
+        height: auto;
+        padding: 5vw;
+    }
+
+    .modal{
+      color: #000;
+    }
+
+    .texto{
+      width: 30vw;
+      float: left;
+      height: auto;
+      font-size: 3em;
+      word-wrap: break-word;
+    }
+
+    #button:hover{
+      color: #0f0;
+    }
+
+    img{
+      margin: 0 auto;
+      display: flex;
+    }
+
+    .img2{
+      float: left;
+      height: 30vh;
+      width: 30vw;
+      margin-bottom: 5vh;
+    }
+
+  </style>
+
+<body>
+
+    <div class="wrapper">
+
+      <img src="./img/logo1.png"/>
+
+    <div class="container pt-3">
+    <div class="texto">
+        Escute Músicas Pop Gratuitamente
+    </div>
+
+    <img class="img2" src="./img/gif.gif"/>
+    
+    <div class="input-group mb-3">
+        <input type="text" id="busca" class="form-control" placeholder="Busque e Selecione a Música Que Deseja Ouvir" list="musicas" autocomplete="off">
+        <datalist id="musicas">
+            <option>Baby Justin Bieber</option>
+            <option>Peaches Justin Bieber</option>
+            <option>Stay (feat. The Kid Laroi)-Justin-Bieber</option>
+            <option>7 rings - Ariana Grande</option>
+            <option>God is a Woman - Ariana Grande</option>
+            <option>One Last Time - Ariana Grande</option>
+            <option>Idiota - Jão</option>
+            <option>Fim De Festa - Jão</option>
+            <option>Me beija com raiva - Jão</option>
+            <option>Modo Turbo - Luíza Sonza</option>
+            <option>Braba - Luíza Sonza</option>
+            <option>Boa Menina - Luíza Sonza</option>
+            <option>Bad Romance - Lady Gaga</option>
+            <option>Stupid Love - Lady Gaga</option>
+            <option>Just Dance- Lady Gaga</option>
+            
+
+        </datalist>
+        <div class="input-group-append">
+          <button id="button" class="btn btn-dark"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <div class="modal-header">
+              <h4 class="modal-title">Música Invalida</h4>
+              <button type="button" class="close" data-dismiss="modal" onclick="fechamodal()">&times;</button>
+            </div>
+          
+            <div class="modal-body">
+              A música digitada é invalida.<br/>
+              Por favor busque e selecione uma música que esteja disponível.
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="fechamodal()">Fechar</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+</div>
+</body>
+<script src="./script.js"></script>
+</html>

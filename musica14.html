@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Stupid Love</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  height: auto; 
+}
+
+audio{
+  width: 25vw;
+}
+
+.view{
+  margin-top: 0px;
+  height: auto;
+}
+
+.gradient-card {
+    margin-top: 0px;
+    background: linear-gradient(to bottom, rgba(2, 2, 2, 0.5) 0%, rgba(88, 78, 141, 0.5), rgba(65, 41, 187, 0.5), rgba(44, 8, 223, 0.5) 100%);
+}
+
+.card {
+  margin-top: 15vh;
+  width: 30vw;
+  border-radius: 10px; }
+
+.card .view {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.my-4{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.mb-5{
+  margin-bottom: 0px !important;
+}
+
+.card2{
+  padding: 30px;
+  width: 50vw !important;
+}
+
+#botaovolta{
+  cursor: pointer;
+}
+
+#botaovolta:hover{
+  color: #00F;
+}
+
+  </style>
+
+<body>
+
+
+    <div class="gradient-card align-items-center">
+
+      <div id="botaovolta" onclick="voltamenu()">
+        <i class="fas fa-arrow-left fa-2x"></i>
+      </div>
+    
+      <div class="container d-flex justify-content-center my-4 mb-5">
+      
+          <div class="card">
+
+            <div class="view">
+              <img class="card-img-top" src="./img/album - 7 stupid love.png"
+                   alt="Card image cap">
+            </div>
+  
+            <div class="card-body text-center">
+  
+              <h5 class="h5 font-weight-bold">  Lady Gaga  </h5>
+              <p class="mb-0"> Stupid Love</p>
+  
+              <audio id="music" controls preload="true">
+                <source src="./musicas/Lady Gaga - Stupid Love (Official Music Video)(MP3_70K).mp3">
+              </audio>
+              
+              </div>
+          </div>
+      </div>
+      <div class="container d-flex justify-content-center my-4 mb-5">
+            <div class="card card2">
+              <h5 class="h5 font-weight-bold">Letra</h5>
+
+              You're the one that I've been waiting for<br/>
+              Gotta quit this crying, nobody's gonna<br/>
+              Heal me if I don't open the door<br/>
+              Kinda hard to believe, gotta have faith in me<br/>
+              Freak out, I freak out, I freak out, I freak out (look at me)<br/>
+              I get down, I get down, I get down, I get down (look at me)<br/>
+              Freak out, I freak out, I freak out, I freak out<br/>
+              Look at me now<br/>
+              'Cause all I ever wanted was love<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh<br/>
+              All I ever wanted was love<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh (higher, higher)<br/>
+              I want your stupid love, love<br/>
+              I want your stupid love, love<br/>
+              (Oh-oh-oh-oh-oh-oh-oh-oh-oh)<br/>
+              Now it's time to free me from the shame<br/>
+              I gotta find that peace, is it too late<br/>
+              Or could this love protect me from the pain?<br/>
+              I would battle for you (even if I break in two)<br/>
+              Freak out, I freak out, I freak out, I freak out (look at me)<br/>
+              I get down, I get down, I get down, I get down (look at me)<br/>
+              Freak out, I freak out, I freak out, I freak out<br/>
+              Look at me now<br/>
+              'Cause all I ever wanted was love<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh<br/>
+              All I ever wanted was love<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh (ooh-ooh)<br/>
+              Hey, hey-uh (higher, higher)<br/>
+              I want your stupid love, love<br/>
+              I want your stupid love, love<br/>
+              (Oh-oh-oh-oh-oh-oh-oh-oh-oh)<br/>
+              I don't need a reason (oh)<br/>
+              Not sorry, I want your stupid love<br/>
+              I don't need a reason (oh)<br/>
+              Not sorry, I want your stupid love<br/>
+              Higher, higher<br/>
+              I want your stupid love, love (oh, oh, woo)<br/>
+              We got a stupid love, love (love, love, uh-oh)<br/>
+              (Oh-oh-oh-oh-oh-oh-oh-oh-oh)<br/>
+              I want your stupid love, love<br/>
+              (Oh-oh-oh-oh-oh-oh-oh-oh-oh)<br/>
+              I want your stupid love, love <br/>
+              
+
+
+            </div>
+          </div>
+        </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
